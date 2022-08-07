@@ -1,0 +1,15 @@
+What do I want my program to do?
+- One moving pin flipper (Hit detection only on the front and right side)
+- Ball that moves (hit detection of the entire ball)
+- Pads to get extra points
+- After a specific time the ball goes faster (30 seconds)
+
+How I am ging to do it:
+- I need a Runner
+- I need a central file
+- I need a graphics document(import all images)
+- I need 2 documents for the sprites animation (Assigns the immages and re-paints them)
+- I need a document for a sprite for the ball and flipper (The rules)
+- I may need to make a sprite for the area(s) the ball has to go over to earn points
+- I need a document to keep the score
+- 
