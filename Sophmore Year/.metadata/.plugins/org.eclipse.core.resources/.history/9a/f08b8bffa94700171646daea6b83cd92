@@ -1,0 +1,7 @@
+package MyGame;
+/*
+ * This will have the general sizes for the display, and many other things
+ */
+public interface Commons {
+
+}

@@ -1,0 +1,18 @@
+package AutomataPack;
+import java.util.*;
+public class AutomataFinal {
+    public static void main (String [] args){
+		int [] arrayRoy = {2,4,6,8};
+    	int [] arrayMax = {1,2,3,4};
+    	int [] arrayLasse ={3,6,9,12};
+    	
+    	int[] arrayJack = Arrays.copyOf(arrayRoy,8);
+    	
+    	System.out.println(Arrays.toString(arrayJack));
+    	
+    	int []  arrayJc = Arrays.copyOfRange(arrayMax,1,3);
+    	
+    	System.out.println(Arrays.toString(arrayJc));
+
+      }
+}

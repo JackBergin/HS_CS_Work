@@ -1,0 +1,52 @@
+package MyGame;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Toolkit;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
+public class GameCentral extends JPanel implements Runnable, Commons 
+{
+   //FEILDS:
+   private Dimension d;
+
+   private final int BAD_GUY_START = 150;
+   private final int BAD_GUY_END = 5;
+   private int direction = -1;
+   private int deaths = 0;
+
+   private boolean ingame = true;
+   private final String explImg = "explosion.png";
+   private String message = "Game Over";
+
+   private Thread animator;//Need to run multiple classes at once so the ed thread needs to be run in this class
+
+   public GameCentral()
+   {
+      initBoard();
+   }
+   
+   //This will initiate the board to be run by SpaceInvaders
+   private void initBoard()
+   {
+      addKeyListener(new TAdapter());
+      setFocusable(true);
+      d = new Dimension(BOARD_WIDTH, BOARD_HEIGHT);
+      setBackground(Color.black);
+   
+      gameInit();
+      setDoubleBuffered(true);
+   }
+}
+
